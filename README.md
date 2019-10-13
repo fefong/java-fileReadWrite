@@ -27,7 +27,7 @@ if (file.exists()) {
 }
 ```
 
-Read file
+### Read file
 
 :warning: _Need add **throws declaration** or surround with **try/catch**;_
 
@@ -80,7 +80,7 @@ if (file.exists()) {
 }
 ```
 
-Write File
+### Write File
 
 :warning: _Need add **throws declaration** or surround with **try/catch**;_
 
