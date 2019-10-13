@@ -13,7 +13,7 @@ import java.io.FileReader;
 import java.io.IOException;
 ```
 
-Check file exists.
+Check file exists
 
 :warning: Creates a new File instance by converting the given pathname string into an abstract pathname. If the given string is the empty string, then the result is the empty abstract pathname.
 
@@ -28,6 +28,8 @@ if (file.exists()) {
 ```
 
 Read file
+
+:warning: _Need add **throws declaration** or surround with **try/catch**;_
 
 ```java
 String FILE = "YOUR_LOG.log";
@@ -44,7 +46,7 @@ while ((line = buffer.readLine()) != null) {
 
 ```
 
-:warning: 
+:warning: Closes the stream and releases any system resources associated withit.
 
 ```java
 buffer.close();
@@ -92,6 +94,11 @@ BufferedWriter buffer = new BufferedWriter(writer);
 buffer.write(content);
 
 System.out.println("Success! You file is saved!");
+```
+
+:warning: Closes the stream and releases any system resources associated withit.
+
+```java
 buffer.close();
 ```
 
